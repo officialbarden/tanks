@@ -1,0 +1,6 @@
+{
+    "values": [
+        "ct:global/load",
+        "tpc:gb/load"
+    ]
+}
