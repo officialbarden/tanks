@@ -39,7 +39,7 @@
 
     data modify storage tpc:entities entity_type set value [\
         {"name":"armor_stand","type":"normal",camera:{walk:{x:13,y:14,z:-3},run:{x:15,y:14,z:-3}},movement:{walk:1,run:3,jump:10,gravity:5}},\
-        {"name":"mannequin","type":"normal",camera:{walk:{x:33,y:24,z:0},run:{x:35,y:24,z:0}},movement:{walk:2.5,run:3,jump:10,gravity:5}}\
+        {"name":"mannequin","type":"normal",camera:{walk:{x:33,y:34,z:0},run:{x:35,y:34,z:0}},movement:{walk:2.5,run:3,jump:10,gravity:5}}\
     ]
 
 function tpc:gb/loop_2t
