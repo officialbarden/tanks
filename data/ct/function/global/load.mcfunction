@@ -17,5 +17,12 @@ scoreboard objectives add ct.VEHICLE.RotationY.Max dummy
 scoreboard objectives add ct.VEHICLE.RotationY.Min dummy
 scoreboard objectives add ct.VEHICLE.CannonRotation dummy
 
+scoreboard objectives add ct.VEHICLE.POS_INIT.X dummy
+scoreboard objectives add ct.VEHICLE.POS_INIT.Y dummy
+scoreboard objectives add ct.VEHICLE.POS_INIT.Z dummy
+scoreboard objectives add ct.VEHICLE.POS dummy
+
 scoreboard objectives add ct.ID dummy
 scoreboard players add .global ct.ID 1
+
+function ct:global/loop_2t
