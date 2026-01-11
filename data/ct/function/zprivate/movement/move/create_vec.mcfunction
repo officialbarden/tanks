@@ -1,9 +1,7 @@
 # // Rotate Vector if pressed A or D:
-execute if entity @s[predicate=ct:input/a] as @n[tag=ct.VEHICLE, predicate=ct:id, predicate=ct:is_moving, type=mannequin] rotated as @s run rotate @s ~-4 ~
-execute if entity @s[predicate=ct:input/d] as @n[tag=ct.VEHICLE, predicate=ct:id, predicate=ct:is_moving, type=mannequin] rotated as @s run rotate @s ~4 ~
-#execute if entity @s[predicate=ct:input/a] run rotate @n[tag=ct.VEHICLE, predicate=ct:id, type=mannequin] ~4 ~
-#execute if entity @s[predicate=ct:input/d] run rotate @n[tag=ct.VEHICLE, predicate=ct:id, type=mannequin] ~-4 ~
-
-#execute if entity @s[redicate=ct:input/s] positioned 0.0 0.0 0.0 rotated as @n[tag=ct.VEHICLE, predicate=ct:id, type=mannequin] facing ^ ^ ^-1000 summon marker run return run function ct:zprivate/movement/move/unit_vec
+execute store result storage ct:storage TEMP.MACRO.TURNFACTOR float 0.001 run scoreboard players get @p[predicate=ct:id] ct.VEHICLE.TurnFactor
+# // Aerodynamic Factor is only for Planes and Helicopters.
+execute store result storage ct:storage TEMP.MACRO.AERODYNAMICFACTOR float 0.001 run scoreboard players get @p[predicate=ct:id] ct.VEHICLE.AerodynamicFactor
+function ct:zprivate/movement/move/turn with storage ct:storage TEMP.MACRO
 
 execute positioned 0.0 0.0 0.0 rotated as @n[tag=ct.VEHICLE, predicate=ct:id, type=mannequin] summon marker run function ct:zprivate/movement/move/unit_vec

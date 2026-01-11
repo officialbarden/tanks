@@ -19,11 +19,15 @@
     scoreboard players add .global tpc.id 1
 
 
+
+
+
+# // THIS IS ALL USELESS NOW
 #> DEFAULT VALUES:
     # Smoothness of Camera Movement // higher the value, greater the smoothness:
     data modify storage tpc:config config.camera.teleport_duration set value 3
     # Gamemode of Player in Camera:
-    data modify storage tpc:config config.camera.gamemode set value "adventure"
+    data modify storage tpc:config config.camera.gamemode set value "spectator"
     
     
     # Entity Camera Config List (NOTE: ALL Values are Scaled to 1/10th their value, so if you set the value to be, for eg: 10, then the value used will be 1.
@@ -39,7 +43,7 @@
 
     data modify storage tpc:entities entity_type set value [\
         {"name":"armor_stand","type":"normal",camera:{walk:{x:13,y:14,z:-3},run:{x:15,y:14,z:-3}},movement:{walk:1,run:3,jump:10,gravity:5}},\
-        {"name":"mannequin","type":"normal",camera:{walk:{x:33,y:24,z:0},run:{x:15,y:24,z:-10}},movement:{walk:2.5,run:3,jump:10,gravity:5}}\
+        {"name":"mannequin","type":"normal",camera:{walk:{x:63,y:24,z:0},run:{x:35,y:24,z:-20}},movement:{walk:2.5,run:3,jump:10,gravity:5}}\
     ]
 
 function tpc:gb/loop_2t

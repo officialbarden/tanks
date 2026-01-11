@@ -11,7 +11,15 @@ scoreboard objectives add ct.VEHICLE.Speed dummy
 scoreboard objectives add ct.VEHICLE.Acceleration dummy
 scoreboard objectives add ct.VEHICLE.Brake dummy
 scoreboard objectives add ct.VEHICLE.Friction dummy
-
+scoreboard objectives add ct.VEHICLE.Upforce dummy
+scoreboard objectives add ct.VEHICLE.TurnFactor dummy
+scoreboard objectives add ct.VEHICLE.CameraDist.X dummy
+scoreboard objectives add ct.VEHICLE.CameraDist.Y dummy
+scoreboard objectives add ct.VEHICLE.CameraDist.Z dummy
+scoreboard objectives add ct.VEHICLE.CameraDistSprint.X dummy
+scoreboard objectives add ct.VEHICLE.CameraDistSprint.Y dummy
+scoreboard objectives add ct.VEHICLE.CameraDistSprint.Z dummy
+scoreboard objectives add ct.VEHICLE.AerodynamicFactor dummy
 # // Other Vehicle Scoreboards
 scoreboard objectives add ct.VEIHCLE.Health dummy
 scoreboard objectives add ct.VEHICLE.RotationY.Max dummy

@@ -5,7 +5,3 @@ scoreboard players operation #ID tpc.id = @s tpc.id
 execute rotated as @p[predicate=tpc:id/common, tag=tpc.controller] as @e[tag=ct.COMPONENTS, tag=ct.FOLLOW_PLAYER, type=item_display, predicate=ct:id] run function ct:zprivate/smooth_rotation/cannon
 # // Smoothly Rotate Body
 execute if predicate ct:is_moving rotated as @s as @e[predicate=ct:id, tag=ct.COMPONENTS, tag=!ct.FOLLOW_PLAYER, type=item_display] run function ct:zprivate/smooth_rotation/body
-
-# // AI Tanks:
-execute as @s[tag=ai.mannequin] rotated as @s as @e[tag=ct.COMPONENTS, tag=ct.FOLLOW_PLAYER, type=item_display, predicate=ct:id] run function ct:zprivate/smooth_rotation/cannon
-execute if predicate ct:is_moving rotated as @s as @e[predicate=ct:id, tag=ct.COMPONENTS, tag=!ct.FOLLOW_PLAYER, type=item_display] run function ct:zprivate/smooth_rotation/body

@@ -1,7 +1,7 @@
 {
     "values": [
         "ct:zprivate/rotate/init",
-        "ct:zprivate/movement/move/init",
-        "ct:zprivate/particles/init"
+        "ct:zprivate/particles/init",
+        "ct:zprivate/movement/move/init"
     ]
 }

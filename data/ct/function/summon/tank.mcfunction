@@ -26,6 +26,9 @@ execute as @e[tag=ct.NEW,tag=ct.COMPONENTS,type=item_display] run data modify en
 function tpc:summon {entity: "mannequin"}
 tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.NEW
 tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.VEHICLE
+tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.TANK
+data modify entity @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] Invulnerable set value true
+data modify entity @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] Silent set value true
 effect give @n[tag=ct.NEW,type=mannequin] invisibility infinite 1 true
 attribute @n[tag=ct.NEW, type=mannequin] scale base set 0.55
 
@@ -41,3 +44,19 @@ scoreboard players operation @e[tag=ct.NEW] ct.ID = .global ct.ID
 scoreboard players operation @s ct.ID = .global ct.ID
 scoreboard players add .global ct.ID 1
 tag @e remove ct.NEW
+
+
+
+# // Initialize Values:
+scoreboard players set @s ct.VEHICLE.Acceleration 10
+scoreboard players set @s ct.VEHICLE.Brake 3
+scoreboard players set @s ct.VEHICLE.Friction 1
+scoreboard players set @s ct.VEHICLE.CameraDist.X 6300
+scoreboard players set @s ct.VEHICLE.CameraDist.Y 2400
+scoreboard players set @s ct.VEHICLE.CameraDist.Z 0
+scoreboard players set @s ct.VEHICLE.CameraDistSprint.X 3500
+scoreboard players set @s ct.VEHICLE.CameraDistSprint.Y 2400
+scoreboard players set @s ct.VEHICLE.CameraDistSprint.Z 2000
+
+# // Reset Speed if non zero
+scoreboard players reset @s ct.VEHICLE.Speed
