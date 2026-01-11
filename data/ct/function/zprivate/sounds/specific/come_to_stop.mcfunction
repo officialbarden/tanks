@@ -1,0 +1,1 @@
+playsound ct:sfx.accelerate.stop master @a[distance=..10] ~ ~ ~ 1 1

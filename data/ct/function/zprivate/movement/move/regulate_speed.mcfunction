@@ -1,4 +1,10 @@
+# // Max Speed Cap
 execute if score @s ct.VEHICLE.MaxSpeed <= @s ct.VEHICLE.Speed run scoreboard players operation @s ct.VEHICLE.Speed = @s ct.VEHICLE.MaxSpeed
+# // Min Speed/Reverse Speed Cap
+execute if score @s ct.VEHICLE.MinSpeed >= @s ct.VEHICLE.Speed run scoreboard players operation @s ct.VEHICLE.Speed = @s ct.VEHICLE.MinSpeed
+
+
+
 execute if entity @n[tag=ct.VEHICLE,predicate=ct:on_ground] as @s[predicate=ct:input/w] run scoreboard players operation @s ct.VEHICLE.Speed += @s ct.VEHICLE.Acceleration
 execute if entity @n[tag=ct.VEHICLE,predicate=ct:on_ground] as @s[predicate=ct:input/s] run scoreboard players operation @s ct.VEHICLE.Speed -= @s ct.VEHICLE.Brake
 # // Make Friction Restoring:

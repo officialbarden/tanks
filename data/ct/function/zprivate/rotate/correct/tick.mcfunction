@@ -1,0 +1,1 @@
+execute as @s[tag=ct.PLAYER.CorrectRotation] at @s run function ct:zprivate/rotate/correct/rotate

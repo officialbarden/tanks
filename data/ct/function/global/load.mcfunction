@@ -13,16 +13,24 @@ scoreboard objectives add ct.VEHICLE.Brake dummy
 scoreboard objectives add ct.VEHICLE.Friction dummy
 
 # // Other Vehicle Scoreboards
+scoreboard objectives add ct.VEIHCLE.Health dummy
 scoreboard objectives add ct.VEHICLE.RotationY.Max dummy
 scoreboard objectives add ct.VEHICLE.RotationY.Min dummy
 scoreboard objectives add ct.VEHICLE.CannonRotation dummy
-
 scoreboard objectives add ct.VEHICLE.POS_INIT.X dummy
 scoreboard objectives add ct.VEHICLE.POS_INIT.Y dummy
 scoreboard objectives add ct.VEHICLE.POS_INIT.Z dummy
 scoreboard objectives add ct.VEHICLE.POS dummy
 
+
+scoreboard objectives add ct.PLAYER.RotX dummy
+scoreboard objectives add ct.PLAYER.RotY dummy
+
 scoreboard objectives add ct.ID dummy
 scoreboard players add .global ct.ID 1
 
-function ct:global/loop_2t
+# // Scheduled Looping Files
+function ct:global/loop_5t
+function ct:zprivate/sounds/specific/looping/init
+function ct:zprivate/rotate/correct/loop_5s
+function ct:zprivate/rotate/correct/loop_2t
