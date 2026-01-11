@@ -51,12 +51,15 @@ tag @e remove ct.NEW
 scoreboard players set @s ct.VEHICLE.Acceleration 10
 scoreboard players set @s ct.VEHICLE.Brake 3
 scoreboard players set @s ct.VEHICLE.Friction 1
-scoreboard players set @s ct.VEHICLE.CameraDist.X 6300
+scoreboard players set @s ct.VEHICLE.CameraDist.X 0
 scoreboard players set @s ct.VEHICLE.CameraDist.Y 2400
-scoreboard players set @s ct.VEHICLE.CameraDist.Z 0
-scoreboard players set @s ct.VEHICLE.CameraDistSprint.X 3500
+scoreboard players set @s ct.VEHICLE.CameraDist.Z -6300
+scoreboard players set @s ct.VEHICLE.CameraDistSprint.X -2000
 scoreboard players set @s ct.VEHICLE.CameraDistSprint.Y 2400
-scoreboard players set @s ct.VEHICLE.CameraDistSprint.Z 2000
+scoreboard players set @s ct.VEHICLE.CameraDistSprint.Z -3500
+scoreboard players set @s ct.VEHICLE.TurnFactor 4000
+scoreboard players set @s ct.VEHICLE.MaxSpeed 250
+scoreboard players set @s ct.VEHICLE.MinSpeed -250
 
 # // Reset Speed if non zero
 scoreboard players reset @s ct.VEHICLE.Speed

@@ -20,6 +20,11 @@ scoreboard objectives add ct.VEHICLE.CameraDistSprint.X dummy
 scoreboard objectives add ct.VEHICLE.CameraDistSprint.Y dummy
 scoreboard objectives add ct.VEHICLE.CameraDistSprint.Z dummy
 scoreboard objectives add ct.VEHICLE.AerodynamicFactor dummy
+scoreboard objectives add ct.VEHICLE.Pitch dummy
+scoreboard objectives add ct.VEHICLE.Roll dummy
+scoreboard objectives add ct.VEHICLE.PitchMin dummy
+scoreboard objectives add ct.VEHICLE.PitchMax dummy
+
 # // Other Vehicle Scoreboards
 scoreboard objectives add ct.VEIHCLE.Health dummy
 scoreboard objectives add ct.VEHICLE.RotationY.Max dummy

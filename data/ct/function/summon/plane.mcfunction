@@ -11,7 +11,7 @@ tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.PLANE
 data modify entity @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] Invulnerable set value true
 data modify entity @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] Silent set value true
 effect give @n[tag=ct.NEW,type=mannequin] invisibility infinite 1 true
-attribute @n[tag=ct.NEW, type=mannequin] scale base set 2
+attribute @n[tag=ct.NEW, type=mannequin] scale base set 0.9
 
 # // Markers for Smooth Rotation
 execute positioned 0.0 0.0 0.0 run summon marker ~ ~ ~ {Tags:[ct.NEW, ct.SMOOTH_ROTATION.MARKER, ct.BODY]}
@@ -27,7 +27,7 @@ tag @e remove ct.NEW
 
 
 # // Initialize Values:
-scoreboard players set @s ct.VEHICLE.MaxSpeed 2000
+scoreboard players set @s ct.VEHICLE.MaxSpeed 5000
 scoreboard players set @s ct.VEHICLE.MinSpeed -100
 
 scoreboard players set @s ct.VEHICLE.Acceleration 10
@@ -42,6 +42,8 @@ scoreboard players set @s ct.VEHICLE.CameraDistSprint.Z -12500
 scoreboard players set @s ct.VEHICLE.TurnFactor 1000
 scoreboard players set @s ct.VEHICLE.AerodynamicFactor 40000
 scoreboard players set @s ct.VEHICLE.Upforce 1000
+scoreboard players set @s ct.VEHICLE.PitchMax 40000
+scoreboard players set @s ct.VEHICLE.PitchMax -40000
 
 # // Reset Speed if non zero
 scoreboard players reset @s ct.VEHICLE.Speed
