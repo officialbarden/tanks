@@ -3,5 +3,6 @@ execute store result storage ct:storage TEMP.VEHICLE.PROPELLER.angle float 0.001
 data modify entity @s[tag=ct.PLANE, tag=ct.PROPELLER, predicate=ct:id] transformation.left_rotation set from storage ct:storage TEMP.VEHICLE.PROPELLER
 data remove storage ct:storage TEMP.VEHICLE.PROPELLER
 execute if score @s ct.VEHICLE.PropellerRPM matches 100000.. run scoreboard players set @s ct.VEHICLE.PropellerRPM 0
-data modify entity @s interpolation_duration set value 0
+data modify entity @s interpolation_duration set value 1
+
 

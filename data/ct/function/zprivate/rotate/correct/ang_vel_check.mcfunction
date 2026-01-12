@@ -1,4 +1,4 @@
-scoreboard players operation #ID ct.ID = @s ct.ID
+function ct:zprivate/id/init
 
 execute store result score #X ct.PLAYER.RotX run data get entity @s Rotation[0] 1000
 execute store result score #Y ct.PLAYER.RotY run data get entity @s Rotation[1] 1000

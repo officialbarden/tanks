@@ -25,7 +25,7 @@
 # // THIS IS ALL USELESS NOW
 #> DEFAULT VALUES:
     # Smoothness of Camera Movement // higher the value, greater the smoothness:
-    data modify storage tpc:config config.camera.teleport_duration set value 3
+    data modify storage tpc:config config.camera.teleport_duration set value 4
     # Gamemode of Player in Camera:
     data modify storage tpc:config config.camera.gamemode set value "spectator"
     

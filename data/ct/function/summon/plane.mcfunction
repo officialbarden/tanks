@@ -19,7 +19,8 @@ effect give @n[tag=ct.NEW,type=mannequin] invisibility infinite 1 true
 attribute @n[tag=ct.NEW, type=mannequin] scale base set 0.9
 
 # // Markers for Smooth Rotation
-execute positioned 0.0 0.0 0.0 run summon marker ~ ~ ~ {Tags:[ct.NEW, ct.SMOOTH_ROTATION.MARKER, ct.BODY]}
+execute positioned 0.0 0.0 0.0 run summon item_display ~ ~ ~ {Tags:[ct.NEW, ct.SMOOTH_ROTATION.MARKER, ct.BODY]}
+data modify entity @n[tag=ct.NEW, tag=ct.SMOOTH_ROTATION.MARKER, tag=ct.BODY, type=item_display] teleport_duration set value 2
 
 # // Build the Tank
 execute as @e[tag=ct.PLANE,tag=ct.NEW,type=item_display] at @s run ride @s mount @n[tag=ct.NEW, tag=ct.VEHICLE,type=mannequin]

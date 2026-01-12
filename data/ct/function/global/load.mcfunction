@@ -37,6 +37,7 @@ scoreboard objectives add ct.VEHICLE.POS_INIT.Y dummy
 scoreboard objectives add ct.VEHICLE.POS_INIT.Z dummy
 scoreboard objectives add ct.VEHICLE.POS dummy
 scoreboard objectives add ct.VEHICLE.PropellerRPM dummy
+scoreboard objectives add ct.VEHICLE.AngularSpeed dummy
 
 
 scoreboard objectives add ct.PLAYER.RotX dummy
