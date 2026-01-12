@@ -24,6 +24,7 @@ scoreboard objectives add ct.VEHICLE.Pitch dummy
 scoreboard objectives add ct.VEHICLE.Roll dummy
 scoreboard objectives add ct.VEHICLE.PitchMin dummy
 scoreboard objectives add ct.VEHICLE.PitchMax dummy
+scoreboard objectives add ct.VEHICLE.TakeoffSpeed dummy
 
 # // Other Vehicle Scoreboards
 scoreboard objectives add ct.VEIHCLE.Health dummy
@@ -44,6 +45,6 @@ scoreboard players add .global ct.ID 1
 
 # // Scheduled Looping Files
 function ct:global/loop_5t
-function ct:zprivate/sounds/specific/looping/init
+function ct:zprivate/sounds/tank/specific/looping/init
 function ct:zprivate/rotate/correct/loop_5s
 function ct:zprivate/rotate/correct/loop_2t

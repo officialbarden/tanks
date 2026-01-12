@@ -1,6 +1,7 @@
 # Test Command:
 # /function ct:summon/plane {VARIANT: 1}
 $summon item_display ~ ~ ~ {Tags:[ct.NEW, ct.PLANE, ct.BASE, ct.COMPONENTS], item:{id:"dirt", components:{"minecraft:item_model":"ct:planes/$(VARIANT)/landing_gear"}}}
+
 execute as @e[tag=ct.NEW,tag=ct.PLANE,type=item_display] run data modify entity @s transformation.scale set value [10.0f, 10.0f, 10.0f]
 execute as @e[tag=ct.NEW,tag=ct.PLANE,type=item_display] run data modify entity @s teleport_duration set value 2
 
@@ -8,6 +9,7 @@ function tpc:summon {entity: "mannequin"}
 tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.NEW
 tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.VEHICLE
 tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.PLANE
+$tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.PLANE.VARIANT.$(VARIANT)
 data modify entity @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] Invulnerable set value true
 data modify entity @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] Silent set value true
 effect give @n[tag=ct.NEW,type=mannequin] invisibility infinite 1 true
@@ -27,11 +29,12 @@ tag @e remove ct.NEW
 
 
 # // Initialize Values:
-scoreboard players set @s ct.VEHICLE.MaxSpeed 5000
+scoreboard players set @s ct.VEHICLE.MaxSpeed 1000
+scoreboard players set @s ct.VEHICLE.TakeoffSpeed 500
 scoreboard players set @s ct.VEHICLE.MinSpeed -100
 
 scoreboard players set @s ct.VEHICLE.Acceleration 10
-scoreboard players set @s ct.VEHICLE.Brake 3
+scoreboard players set @s ct.VEHICLE.Brake 8
 scoreboard players set @s ct.VEHICLE.Friction 1
 scoreboard players set @s ct.VEHICLE.CameraDist.X 0
 scoreboard players set @s ct.VEHICLE.CameraDist.Y 2400
@@ -40,8 +43,8 @@ scoreboard players set @s ct.VEHICLE.CameraDistSprint.X 0
 scoreboard players set @s ct.VEHICLE.CameraDistSprint.Y 2400
 scoreboard players set @s ct.VEHICLE.CameraDistSprint.Z -12500
 scoreboard players set @s ct.VEHICLE.TurnFactor 1000
-scoreboard players set @s ct.VEHICLE.AerodynamicFactor 40000
-scoreboard players set @s ct.VEHICLE.Upforce 1000
+scoreboard players set @s ct.VEHICLE.AerodynamicFactor 4000
+scoreboard players set @s ct.VEHICLE.Upforce 5000
 scoreboard players set @s ct.VEHICLE.PitchMax 40000
 scoreboard players set @s ct.VEHICLE.PitchMax -40000
 

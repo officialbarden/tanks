@@ -1,3 +1,3 @@
 execute store result score @s ct.VEHICLE.Pitch run data get entity @s Rotation[1] 1000
-execute if score @s ct.VEHICLE.Pitch matches ..-4501 run data modify entity @s Rotation[1] set value 30.0f
-execute if score @s ct.VEHICLE.Pitch matches 4501.. run data modify entity @s Rotation[1] set value -30.0f
+execute if score @s ct.VEHICLE.Pitch matches ..-45001 run return run data modify entity @s Rotation[1] set value -30.0f
+execute if score @s ct.VEHICLE.Pitch matches 45001.. run return run data modify entity @s Rotation[1] set value 30.0f
