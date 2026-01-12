@@ -27,7 +27,8 @@ scoreboard objectives add ct.VEHICLE.PitchMax dummy
 scoreboard objectives add ct.VEHICLE.TakeoffSpeed dummy
 
 # // Other Vehicle Scoreboards
-scoreboard objectives add ct.VEIHCLE.Health dummy
+scoreboard objectives add ct.VEHICLE.Variant dummy
+scoreboard objectives add ct.VEHICLE.Health dummy
 scoreboard objectives add ct.VEHICLE.RotationY.Max dummy
 scoreboard objectives add ct.VEHICLE.RotationY.Min dummy
 scoreboard objectives add ct.VEHICLE.CannonRotation dummy
@@ -35,6 +36,7 @@ scoreboard objectives add ct.VEHICLE.POS_INIT.X dummy
 scoreboard objectives add ct.VEHICLE.POS_INIT.Y dummy
 scoreboard objectives add ct.VEHICLE.POS_INIT.Z dummy
 scoreboard objectives add ct.VEHICLE.POS dummy
+scoreboard objectives add ct.VEHICLE.PropellerRPM dummy
 
 
 scoreboard objectives add ct.PLAYER.RotX dummy

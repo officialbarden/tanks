@@ -1,6 +1,9 @@
 # Test Command:
 # /function ct:summon/plane {VARIANT: 1}
 $summon item_display ~ ~ ~ {Tags:[ct.NEW, ct.PLANE, ct.BASE, ct.COMPONENTS], item:{id:"dirt", components:{"minecraft:item_model":"ct:planes/$(VARIANT)/landing_gear"}}}
+$summon item_display ~ ~ ~ {Tags:[ct.NEW, ct.PLANE, ct.BASE, ct.PROPELLER, ct.COMPONENTS], item:{id:"dirt", components:{"minecraft:item_model":"ct:planes/$(VARIANT)/fan"}}}
+
+$scoreboard players set @s ct.VEHICLE.Variant $(VARIANT)
 
 execute as @e[tag=ct.NEW,tag=ct.PLANE,type=item_display] run data modify entity @s transformation.scale set value [10.0f, 10.0f, 10.0f]
 execute as @e[tag=ct.NEW,tag=ct.PLANE,type=item_display] run data modify entity @s teleport_duration set value 2
@@ -41,7 +44,7 @@ scoreboard players set @s ct.VEHICLE.CameraDist.Y 2400
 scoreboard players set @s ct.VEHICLE.CameraDist.Z -10500
 scoreboard players set @s ct.VEHICLE.CameraDistSprint.X 0
 scoreboard players set @s ct.VEHICLE.CameraDistSprint.Y 2400
-scoreboard players set @s ct.VEHICLE.CameraDistSprint.Z -12500
+scoreboard players set @s ct.VEHICLE.CameraDistSprint.Z -5000
 scoreboard players set @s ct.VEHICLE.TurnFactor 1000
 scoreboard players set @s ct.VEHICLE.AerodynamicFactor 4000
 scoreboard players set @s ct.VEHICLE.Upforce 5000

@@ -1,8 +1,8 @@
 {
     "values": [
+        "ct:zprivate/vehicle_specific/init",
         "ct:zprivate/rotate/init",
         "ct:zprivate/rotate/lock",
-        "ct:zprivate/particles/init",
         "ct:zprivate/movement/move/init"
     ]
 }

@@ -1,5 +1,7 @@
 scoreboard players operation #ID ct.ID = @s ct.ID
 execute as @n[tag=ct.PLANE, predicate=ct:id, type=item_display] at @s align y positioned ~ ~0.5 ~ positioned ~ ~-1 ~ unless block ~ ~ ~ #ct:air run return fail
+
+
 $scoreboard players $(SIGN) @s ct.VEHICLE.Roll $(VALUE)
 
 execute if score @s ct.VEHICLE.Roll matches 90001.. run scoreboard players set @s ct.VEHICLE.Roll 90000
