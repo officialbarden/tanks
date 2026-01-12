@@ -10,7 +10,8 @@ scoreboard players reset @s ct.VEHICLE.AngularSpeed
 execute if score @s ct.VEHICLE.Roll matches 90001.. run scoreboard players set @s ct.VEHICLE.Roll 90000
 execute if score @s ct.VEHICLE.Roll matches ..-90001 run scoreboard players set @s ct.VEHICLE.Roll -90000
 
-data modify entity @n[tag=ct.PLANE, predicate=ct:id, type=item_display] interpolation_duration set value 6
+data modify entity @n[tag=ct.PLANE, predicate=ct:id, type=item_display] interpolation_duration set value 10
+
 
 data remove storage ct:storage TEMP.Roll
 data modify storage ct:storage TEMP.Roll set value {axis:[0, 0, 1], angle:0}
