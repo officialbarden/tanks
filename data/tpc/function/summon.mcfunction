@@ -8,7 +8,7 @@
     summon item_display ~ ~ ~ {Tags:["tpc.camera","tpc.temp"]}
 #> create team
     execute store result storage tpc:temp cache.macro.ID int 1 run scoreboard players get .global tpc.id
-    function tpc:private/team/create with storage tpc:temp cache.macro
+    #function tpc:private/team/create with storage tpc:temp cache.macro
 #> GIVE invisibility
     effect give @s invisibility infinite 255 true
 #> MODIFY ATTRIBUTES
