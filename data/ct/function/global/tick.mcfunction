@@ -1,5 +1,4 @@
-execute as @a[tag=tpc.controller] at @s run function ct:zprivate/rotate/correct/tick
-
+execute as @a at @s run function #ct:as_player
 execute as @e[tag=ct.VEHICLE, type=mannequin] at @s run function #ct:as_vehicle
 
 # // Precisely Smooth Rotation

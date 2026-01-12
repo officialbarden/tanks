@@ -3,6 +3,7 @@ scoreboard objectives add ct.MATH dummy
 scoreboard objectives add ct.Constants dummy
 scoreboard players set .3 ct.Constants 3
 scoreboard players set .5 ct.Constants 5
+scoreboard players set .TicksInASecond ct.Constants 20
 
 # // Vehicle Riding Stats (x1000):
 scoreboard objectives add ct.VEHICLE.MaxSpeed dummy
@@ -51,3 +52,4 @@ function ct:global/loop_5t
 function ct:zprivate/sounds/tank/specific/looping/init
 function ct:zprivate/rotate/correct/loop_5s
 function ct:zprivate/rotate/correct/loop_2t
+function ct:zprivate/sounds/plane/loop
