@@ -1,5 +1,7 @@
 {
     "values": [
-        "ct:zprivate/rotate/correct/tick"
+        "ct:zprivate/rotate/correct/tick",
+        "ct:zprivate/kinetic/calculate",
+        "ct:zprivate/smooth_rotation/roll/delay"
     ]
 }

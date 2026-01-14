@@ -1,5 +1,9 @@
+# // Do Not Roll Until Roll Timer has Hit
+execute unless score @s ct.VEHICLE.InitiateFirstRollDelayTimer matches 0 run return fail
+
+
 function ct:zprivate/id/init
-execute as @n[tag=ct.PLANE, predicate=ct:id, type=item_display] at @s align y positioned ~ ~0.5 ~ positioned ~ ~-1 ~ unless block ~ ~ ~ #ct:air run return fail
+execute as @n[tag=ct.PLANE, tag=!ct.PROPELLER, predicate=ct:id, type=item_display] at @s align y positioned ~ ~0.5 ~ positioned ~ ~-1 ~ unless block ~ ~ ~ #ct:air run return fail
 
 scoreboard players set @s ct.VEHICLE.TurnFactor 8000
 
@@ -16,6 +20,6 @@ data modify entity @n[tag=ct.PLANE, predicate=ct:id, type=item_display] interpol
 data remove storage ct:storage TEMP.Roll
 data modify storage ct:storage TEMP.Roll set value {axis:[0, 0, 1], angle:0}
 execute store result storage ct:storage TEMP.Roll.angle float 0.00001745329 run scoreboard players get @s ct.VEHICLE.Roll
-data modify entity @n[tag=ct.PLANE, predicate=ct:id, type=item_display] transformation.left_rotation set from storage ct:storage TEMP.Roll
+data modify entity @n[tag=ct.PLANE, tag=!ct.PROPELLER, predicate=ct:id, type=item_display] transformation.left_rotation set from storage ct:storage TEMP.Roll
 data remove storage ct:storage TEMP.Roll
 

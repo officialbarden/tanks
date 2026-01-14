@@ -1,8 +1,8 @@
 # // Scoreboards
 scoreboard objectives add ct.MATH dummy
 scoreboard objectives add ct.Constants dummy
-scoreboard players set .3 ct.Constants 3
-scoreboard players set .5 ct.Constants 5
+scoreboard players set .2 ct.Constants 2
+scoreboard players set .1000 ct.Constants 100
 scoreboard players set .TicksInASecond ct.Constants 20
 
 # // Vehicle Riding Stats (x1000):
@@ -39,6 +39,12 @@ scoreboard objectives add ct.VEHICLE.POS_INIT.Z dummy
 scoreboard objectives add ct.VEHICLE.POS dummy
 scoreboard objectives add ct.VEHICLE.PropellerRPM dummy
 scoreboard objectives add ct.VEHICLE.AngularSpeed dummy
+scoreboard objectives add ct.VEHICLE.KineticEnergy dummy
+scoreboard objectives add ct.VEHICLE.Mass dummy
+
+# // One stores Delay Value, Another Ticks it:
+scoreboard objectives add ct.VEHICLE.InitiateFirstRollDelay dummy
+scoreboard objectives add ct.VEHICLE.InitiateFirstRollDelayTimer dummy
 
 
 scoreboard objectives add ct.PLAYER.RotX dummy
