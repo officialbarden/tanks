@@ -1,3 +1,5 @@
+return fail
+
 # // Calculate K.E. Every tick from scratch
 scoreboard players reset @s ct.VEHICLE.KineticEnergy
 

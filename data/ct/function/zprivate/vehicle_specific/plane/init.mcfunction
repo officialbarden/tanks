@@ -3,8 +3,6 @@ execute as @n[tag=ct.PLANE, tag=ct.BASE, predicate=ct:id, type=item_display, tag
 # // Sounds
 function ct:zprivate/sounds/plane/init
 
-
-
 # // Toggle Landing Gear
-function ct:zprivate/vehicle_specific/plane/landing_gear/init
+execute as @p[predicate=ct:id] run function ct:zprivate/vehicle_specific/plane/landing_gear/init
 

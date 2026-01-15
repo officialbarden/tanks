@@ -16,6 +16,7 @@ function tpc:summon {entity: "mannequin"}
 tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.NEW
 tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.VEHICLE
 tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.PLANE
+execute rotated as @s run rotate @n[tag=ct.PLANE, tag=ct.NEW, tag=ct.VEHICLE] ~ ~
 $tag @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] add ct.PLANE.VARIANT.$(VARIANT)
 data modify entity @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] Invulnerable set value true
 data modify entity @n[tag=tpc.controlled,tag=tpc.entity,type=mannequin] Silent set value true

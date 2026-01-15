@@ -47,6 +47,11 @@ scoreboard objectives add ct.VEHICLE.InitiateFirstRollDelay dummy
 scoreboard objectives add ct.VEHICLE.InitiateFirstRollDelayTimer dummy
 
 
+# // Vehicle Specific Scoreboards:
+# // Plane Scoreboards
+scoreboard objectives add ct.VEHICLE.Plane.FireRate dummy
+scoreboard objectives add ct.VEHICLE.Plane.Weapon.DelayTimer dummy
+
 scoreboard objectives add ct.PLAYER.RotX dummy
 scoreboard objectives add ct.PLAYER.RotY dummy
 
@@ -59,3 +64,4 @@ function ct:zprivate/sounds/tank/specific/looping/init
 function ct:zprivate/rotate/correct/loop_5s
 function ct:zprivate/rotate/correct/loop_2t
 function ct:zprivate/sounds/plane/loop
+function ct:global/loop_5s

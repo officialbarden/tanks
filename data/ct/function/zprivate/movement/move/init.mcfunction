@@ -1,5 +1,6 @@
 # // ID
 #execute if score @p[predicate=ct:id] ct.VEHICLE.Speed matches 0 run return fail
+execute as @p[predicate=ct:id, predicate=!ct:is_keystroking] if score @s ct.VEHICLE.Speed matches 0 run return fail
 
 # // Create Motion Vector
 function ct:zprivate/movement/check_stroke/init
