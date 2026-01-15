@@ -1,2 +1,2 @@
 # tanks
-Adds Cool Tanks to the Game.
+Adds Highly Customizable Cool Tanks (and Planes) to the Game.
