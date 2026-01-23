@@ -1,7 +1,5 @@
 {
     "values": [
-        "ct:global/tick",
-        "tpc:gb/loop",
-        "camera:gb/tick"
+        "ct:global/tick"
     ]
 }

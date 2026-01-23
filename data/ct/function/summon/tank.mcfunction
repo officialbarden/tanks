@@ -12,8 +12,8 @@ $summon item_display ~ ~ ~ {Tags:[ct.NEW, ct.COMPONENTS, ct.CANNON, ct.FOLLOW_PL
 $summon item_display ~ ~ ~ {Tags:[ct.NEW, ct.COMPONENTS, ct.MACHINE_GUN, ct.FOLLOW_PLAYER], item:{id:"dirt", components:{"minecraft:item_model":"ct:tanks/$(MACHINE_GUN)/machine_gun"}}}
 execute as @e[tag=ct.NEW, type=item_display] run data modify entity @s teleport_duration set value 2
 
-execute at @s align y positioned ^-1.25 ^ ^ run summon interaction ~ ~ ~ {Tags:["ct.RIGHT", "ct.SEAT", "ct.NEW"]}
-execute at @s align y positioned ^1.25 ^ ^ run summon interaction ~ ~ ~ {Tags:["ct.LEFT", "ct.SEAT", "ct.NEW"]}
+#execute at @s align y positioned ^-1.25 ^ ^ run summon interaction ~ ~ ~ {Tags:["ct.RIGHT", "ct.SEAT", "ct.NEW"]}
+#execute at @s align y positioned ^1.25 ^ ^ run summon interaction ~ ~ ~ {Tags:["ct.LEFT", "ct.SEAT", "ct.NEW"]}
 
 #summon marker ~ ~ ~ {Tags:[ct.NEW, ct.MARKER, ct.LEFT_WHEELS]}
 #summon marker ~ ~ ~ {Tags:[ct.NEW, ct.MARKER, ct.RIGHT_WHEELS]}

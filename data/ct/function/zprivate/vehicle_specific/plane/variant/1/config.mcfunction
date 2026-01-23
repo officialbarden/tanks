@@ -7,11 +7,11 @@ scoreboard players set @s ct.VEHICLE.Acceleration 10
 scoreboard players set @s ct.VEHICLE.Brake 8
 scoreboard players set @s ct.VEHICLE.Friction 1
 scoreboard players set @s ct.VEHICLE.CameraDist.X 0
-scoreboard players set @s ct.VEHICLE.CameraDist.Y 2400
-scoreboard players set @s ct.VEHICLE.CameraDist.Z -10500
+scoreboard players set @s ct.VEHICLE.CameraDist.Y 3400
+scoreboard players set @s ct.VEHICLE.CameraDist.Z -14500
 scoreboard players set @s ct.VEHICLE.CameraDistSprint.X 0
-scoreboard players set @s ct.VEHICLE.CameraDistSprint.Y 2400
-scoreboard players set @s ct.VEHICLE.CameraDistSprint.Z -5000
+scoreboard players set @s ct.VEHICLE.CameraDistSprint.Y 3400
+scoreboard players set @s ct.VEHICLE.CameraDistSprint.Z -10500
 scoreboard players set @s ct.VEHICLE.TurnFactor 1000
 scoreboard players set @s ct.VEHICLE.AerodynamicFactor 4000
 scoreboard players set @s ct.VEHICLE.Upforce 5000

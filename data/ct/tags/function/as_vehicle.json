@@ -1,7 +1,6 @@
 {
     "values": [
         "ct:zprivate/id/init",
-        "ct:zprivate/sit/tp",
         "ct:zprivate/vehicle_specific/init",
         "ct:zprivate/rotate/init",
         "ct:zprivate/rotate/lock",
